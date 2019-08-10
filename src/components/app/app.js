@@ -6,7 +6,9 @@
 
 import React from 'react'
 import './app.less'
-import Demo from '../demo/demo'
+import  NewsHeader from '../news-header/news-header'
+import NewsNavigation from '../news-navigation/news-navigation';
+
 
 
 class App extends React.Component {
@@ -24,28 +26,10 @@ class App extends React.Component {
    * @desc 不用解释了吧，render函数
    */
   render() {
-    const title = '学习'
     return (
       <div className="app">
-        <div className="page-header">
-          <span className="title"></span>
-          <span className="icon-1"></span>
-          <span className="icon-2"></span>
-        </div>
-        <ul className="list-top">
-          <li id="li-1">推荐</li>
-          <li>视频</li>
-          <li>热点</li>
-          <li>社会</li>
-          <li>娱乐</li>
-          <li>军事</li>
-          <li>科技</li>
-          <li>汽车</li>
-          <li>房产</li>
-          <li>家居</li>
-          <li>体育</li>
-          <li>财经</li>
-        </ul>
+        <NewsHeader></NewsHeader>
+        <NewsNavigation></NewsNavigation>
         <div className="list-mid">
           <div>
             <div className="content">
