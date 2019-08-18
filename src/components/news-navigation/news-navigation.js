@@ -23,21 +23,23 @@ class NewsNavigation extends React.Component {
    * @desc 不用解释了吧，render函数
    */
   render() {
+    const menu = ['推荐', '视频', '热点', '社会', '娱乐', '军事', '科技', '汽车', '房产', '家居', '体育', '财经']
+    let menuLie = menu.map(function(item, index) {
+      if (index == 0) {
+        return (
+          <li className="li-1">{ item }</li>
+        )
+      } else {
+        return (
+          <li>{ item }</li>
+        )
+      }
+    })
+
     return (
         <ul className="news-navigation">
-            <li id="li-1">推荐</li>
-            <li>视频</li>
-            <li>热点</li>
-            <li>社会</li>
-            <li>娱乐</li>
-            <li>军事</li>
-            <li>科技</li>
-            <li>汽车</li>
-            <li>房产</li>
-            <li>家居</li>
-            <li>体育</li>
-            <li>财经</li>
-            <li id="sign">+</li>
+          { menuLie }
+          <li id="sign">+</li>
         </ul>
     )
   }
