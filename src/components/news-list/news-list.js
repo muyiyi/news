@@ -6,6 +6,7 @@
 
 import React from 'react'
 import './news-list.less'
+import NewsListch from '../news-listch/news-listch';
 
 
 
@@ -108,56 +109,12 @@ class NewsList extends React.Component {
         type: 5
       }
     ];
-    let listlie = listmenu.map(function(item, index) {
-      if (item.type == 5) {
-        return (
-          <div className="content">
-            <div className="title-1">{ item.title }</div>
-            <div className="imgcontain">
-                <img className="img-2" src={ item.imgsrc[0] }/>
-                <img className="img-3" src={ item.imgsrc[1] }/>
-                <img className="img-4" src={ item.imgsrc[2] }/>
-            </div>
-            <div className="status-1">{ item.status }</div>
-            <div className="line-bt">
-                <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
-            </div>
-        </div>
-        )
-      } else if (item.type == 4) {
-        return (
-          <div className="content">           
-            <div className="line-left">
-              <div className="title-2">{ item.title }</div>
-              <div className="line-bt">
-                <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
-              </div>
-            </div>
-            <img className="img-1" src={ item.imgsrc }/>
-        </div>
-        )
-      } else if (item.type == 3) {
-        return (
-          <div className="content">
-          <div className="title-1">{ item.title }</div>
-          <div className="line-bt">
-            <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
-          </div>
-        </div>
-        )
-      } else {
-        return (
-          <div className="content">
-              <div className="title-1">{ item.title }</div>
-              <div className="status-1">{ item.status }</div>
-              <div className="line-bt">
-                <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
-              </div>
-          </div>
-        )
-      }     
-    })
 
+    let listlie = listmenu.map(function(item, index) {
+      return (
+        <NewsListch data={ item }></NewsListch>
+      ) 
+    })
 
     return (
       <div className="news-list" onClick={this.clicklist}>
