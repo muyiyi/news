@@ -18,16 +18,17 @@ class NewsNavigation extends React.Component {
     super(props)
 
     this.state = {
-      chooseindex: []
+      chooseIndex: 0
     }
   }
 
   Tabchange = (index) => {
     this.setState({
-      chooseindex: [index]
+      chooseIndex: index
     })
+    console.log(index)
   }
-
+  
  
 
 
@@ -37,15 +38,15 @@ class NewsNavigation extends React.Component {
    */
   render() {
     const menu = ['推荐', '视频', '热点', '社会', '娱乐', '军事', '科技', '汽车', '房产', '家居', '体育', '财经']
-    let menuLie = menu.map(function(item, index) {
+    let menuLie = menu.map((item, index) => {
       return (
-        <li key={ index }>
-        onClcik={ this.Tabchange.bind(this, index) }
-        className={ classnames({'select': this.state.chooseindex.indexof(index) !== -1})}
-        { item }
+        <li key={ index } onClick={ this.Tabchange.bind(this, index) }
+          className={ classnames({ 'selected': this.state.chooseIndex == index})}>
+          { item }
         </li>
       )
     })
+   
 
     return (
         <ul className="news-navigation">

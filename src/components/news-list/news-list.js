@@ -7,6 +7,7 @@
 import React from 'react'
 import './news-list.less'
 import NewsListch from '../news-listch/news-listch';
+import classnames from 'classnames'
 
 
 
@@ -18,10 +19,15 @@ class NewsList extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      chooselist: -1
+    }
   }
 
-  clicklist() {
+  clicklist = (index) => {
+    this.setState({
+      chooselist: index
+    })
     console.log('欢迎收看')
   }
 
@@ -110,14 +116,17 @@ class NewsList extends React.Component {
       }
     ];
 
-    let listlie = listmenu.map(function(item, index) {
+    let listlie = listmenu.map((item, index) => {
       return (
-        <NewsListch data={ item }></NewsListch>
+        <div key={ index } onClick={ this.clicklist.bind(this, index) }
+        className={ classnames({'select': this.state.chooselist == index})}>
+          <NewsListch data={ item }></NewsListch>
+        </div>
       ) 
     })
 
     return (
-      <div className="news-list" onClick={this.clicklist}>
+      <div className="news-list" >
         <div>
           { listlie }
         </div>

@@ -40,12 +40,14 @@ class NewsListch extends React.Component {
             return (
             <div className="content">           
                 <div className="line-left">
-                <div className="title-2">{ item.title }</div>
-                <div className="line-bt">
-                    <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
+                    <div className="box">
+                        <div className="title-2">{ item.title }</div>
+                        <div className="line-bt1">
+                            <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
+                        </div>
+                    </div>
+                    <img className="img-1" src={ item.imgsrc }/>
                 </div>
-                </div>
-                <img className="img-1" src={ item.imgsrc }/>
             </div>
             )
         } else if (item.type == 3) {
