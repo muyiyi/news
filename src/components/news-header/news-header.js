@@ -6,6 +6,7 @@
 
 import React from 'react'
 import './news-header.less'
+import { Link } from 'react-router-dom/cjs/react-router-dom';
 
 
 class NewsHeader extends React.Component {
@@ -27,8 +28,12 @@ class NewsHeader extends React.Component {
       <div className="news-header">
         <span className="title"></span>
         <span className="icon-1"></span>
-        <span className="icon-2"></span>
+        <Link to={ {pathname: "/search/"} }>
+          <span className="icon-2"></span>
+        </Link>
+        
       </div>
+      
     )
   }
 }
