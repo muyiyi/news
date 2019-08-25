@@ -7,6 +7,7 @@
 import React from 'react'
 import './news-navigation.less'
 import classnames from 'classnames'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 class NewsNavigation extends React.Component {
@@ -49,10 +50,13 @@ class NewsNavigation extends React.Component {
    
 
     return (
-        <ul className="news-navigation">
-          { menuLie }
-          <li id="sign">+</li>
-        </ul>
+      <ul className="news-navigation">
+        { menuLie }
+      <Link to={ {pathname: "/manage/"} }>
+        <li id="sign">+</li>  
+      </Link>        
+      </ul>
+        
     )
   }
 }

@@ -32,7 +32,9 @@ class HeadSearch extends React.Component {
               <div className="head-btn">
                 <div className="btn-box">
                     <input className="search-1" type="text" value=" 搜你想看"/>
-                    <img className="img-6" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24'%3E%3Cdefs%3E%3Cpath id='a' d='M0 0h24v24H0z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cg stroke='%23333' stroke-linecap='round' stroke-width='1.5' mask='url(%23b)'%3E%3Cpath d='M18.385 17.178l3.535 3.535'/%3E%3C/g%3E%3Ccircle cx='12' cy='11.5' r='8.5' stroke='%23333' stroke-width='1.5' mask='url(%23b)'/%3E%3C/g%3E%3C/svg%3E" />
+                    <div className="img-6">
+                      <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24'%3E%3Cdefs%3E%3Cpath id='a' d='M0 0h24v24H0z'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cmask id='b' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Cg stroke='%23333' stroke-linecap='round' stroke-width='1.5' mask='url(%23b)'%3E%3Cpath d='M18.385 17.178l3.535 3.535'/%3E%3C/g%3E%3Ccircle cx='12' cy='11.5' r='8.5' stroke='%23333' stroke-width='1.5' mask='url(%23b)'/%3E%3C/g%3E%3C/svg%3E" />
+                    </div>
                 </div>
               </div>
           </div>
