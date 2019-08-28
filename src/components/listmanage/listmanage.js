@@ -17,17 +17,47 @@ class ListManage extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      listachoose: ['推荐', '热点', '社会', '娱乐', '科技', '汽车', '体育', '财经', '军事', '国际', '时尚', '游戏'],
+      listbchoose: ['旅游', '历史', '探索', '美食', '育儿', '养生', '故事', '美文']
+    }
   }
 
+  
+  choosea = (index) => {
 
+    let dela= this.state.listachoose.splice(index, 1);
+
+
+    let adda = this.state.listbchoose.push(dela);
+    console.log(adda)
+    this.setState({       
+      listachoose: this.state.listachoose,
+      listbchoose: this.state.listbchoose,
+    })
+  }
+
+  chooseb = (index) => {
+    let dellistb = this.state.listbchoose;
+    let delb = dellistb.splice(index, 1);
+
+    let addlistb = this.state.listachoose;
+    let addb = addlistb.push(delb)
+    console.log(addb)
+
+    this.setState({
+      listachoose: this.state.listachoose,
+      listbchoose: this.state.listbchoose,
+    })
+  }
 
 
   /**
    * @desc 不用解释了吧，render函数
    */
   render() {
-    const lista = ['推荐', '热点', '社会', '娱乐', '科技', '汽车', '体育', '财经', '军事', '国际', '时尚', '游戏']
+    console.log(this.state)
+    const lista = this.state.listachoose
     let listalie = lista.map((item, index) => {
       if(index == 0) {
         return (
@@ -35,17 +65,17 @@ class ListManage extends React.Component {
         )
       } else {
         return (
-          <li key={ index }>
+          <li key={ index } onClick={ this.choosea.bind(this, index) }>
             { item }
           </li>
         )
       }
     })
 
-    const listb = ['旅游', '历史', '探索', '美食', '育儿', '养生', '故事', '美文']
+    const listb = this.state.listbchoose
     let listblie = listb.map((item, index) => {
       return (
-        <li key={ index }>
+        <li key={ index } onClick={ this.chooseb.bind(this, index) }>
           { item }
         </li>
       )
