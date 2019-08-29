@@ -42,7 +42,7 @@ class NewsNavigation extends React.Component {
     let menuLie = menu.map((item, index) => {
       return (
         <li key={ index } onClick={ this.Tabchange.bind(this, index) }
-          className={ classnames({ 'selected': this.state.chooseIndex == index})}>
+          className={ classnames({ 'selected': this.state.chooseIndex === index})}>
           { item }
         </li>
       )

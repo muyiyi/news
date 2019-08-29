@@ -27,10 +27,8 @@ class ListManage extends React.Component {
   choosea = (index) => {
 
     let dela= this.state.listachoose.splice(index, 1);
+    this.state.listbchoose.push(dela);
 
-
-    let adda = this.state.listbchoose.push(dela);
-    console.log(adda)
     this.setState({       
       listachoose: this.state.listachoose,
       listbchoose: this.state.listbchoose,
@@ -38,12 +36,8 @@ class ListManage extends React.Component {
   }
 
   chooseb = (index) => {
-    let dellistb = this.state.listbchoose;
-    let delb = dellistb.splice(index, 1);
-
-    let addlistb = this.state.listachoose;
-    let addb = addlistb.push(delb)
-    console.log(addb)
+    let delb = this.state.listbchoose.splice(index, 1);
+    this.state.listachoose.push(delb)
 
     this.setState({
       listachoose: this.state.listachoose,
@@ -59,9 +53,9 @@ class ListManage extends React.Component {
     console.log(this.state)
     const lista = this.state.listachoose
     let listalie = lista.map((item, index) => {
-      if(index == 0) {
+      if(index === 0) {
         return (
-          <li className="first">推荐</li>
+          <li className="first" key={ index }>推荐</li>
         )
       } else {
         return (

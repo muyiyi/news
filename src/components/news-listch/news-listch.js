@@ -6,6 +6,7 @@
 
 import React from 'react'
 import './news-listch.less'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class NewsListch extends React.Component {
     /**
@@ -21,14 +22,14 @@ class NewsListch extends React.Component {
 
     render() {
         let item = this.props.data;
-        if (item.type == 5) {
+        if (item.type === 5) {
             return (
             <div className="content">
                 <div className="title-1">{ item.title }</div>
                 <div className="imgcontain">
-                    <img className="img-2" src={ item.imgsrc[0] }/>
-                    <img className="img-3" src={ item.imgsrc[1] }/>
-                    <img className="img-4" src={ item.imgsrc[2] }/>
+                    <img className="img-2" alt="" src={ item.imgsrc[0] }/>
+                    <img className="img-3" alt="" src={ item.imgsrc[1] }/>
+                    <img className="img-4" alt="" src={ item.imgsrc[2] }/>
                 </div>
                 <div className="status-1">{ item.status }</div>
                 <div className="line-bt">
@@ -36,7 +37,7 @@ class NewsListch extends React.Component {
                 </div>
             </div>
             )
-        } else if (item.type == 4) {
+        } else if (item.type === 4) {
             return (
             <div className="content">           
                 <div className="line-left">
@@ -46,11 +47,11 @@ class NewsListch extends React.Component {
                             <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
                         </div>
                     </div>
-                    <img className="img-1" src={ item.imgsrc }/>
+                    <img className="img-1" alt="" src={ item.imgsrc }/>
                 </div>
             </div>
             )
-        } else if (item.type == 3) {
+        } else if (item.type === 3) {
             return (
             <div className="content">
             <div className="title-1">{ item.title }</div>
@@ -61,13 +62,13 @@ class NewsListch extends React.Component {
             )
         } else {
             return (
-            <div className="content">
+                <div className="content">
                 <div className="title-1">{ item.title }</div>
                 <div className="status-1">{ item.status }</div>
                 <div className="line-bt">
                     <span>{ item.scrsite }</span><span>{ item.comment }</span><span>{ item.timelength }</span>
                 </div>
-            </div>
+                </div>
             )
         }           
     }

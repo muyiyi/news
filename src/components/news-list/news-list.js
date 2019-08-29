@@ -8,6 +8,7 @@ import React from 'react'
 import './news-list.less'
 import NewsListch from '../news-listch/news-listch';
 import classnames from 'classnames'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
@@ -119,7 +120,7 @@ class NewsList extends React.Component {
     let listlie = listmenu.map((item, index) => {
       return (
         <div key={ index } onClick={ this.clicklist.bind(this, index) }
-        className={ classnames({'select': this.state.chooselist == index})}>
+        className={ classnames({'select': this.state.chooselist === index})}>
           <NewsListch data={ item }></NewsListch>
         </div>
       ) 
@@ -127,8 +128,10 @@ class NewsList extends React.Component {
 
     return (
       <div className="news-list" >
-        <div>
+        <div className="box">
+        <Link to={ {pathname: "/detail/"} }>
           { listlie }
+        </Link>
         </div>
       </div>
     )
