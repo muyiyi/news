@@ -62,9 +62,222 @@ class NewsDetail extends React.Component {
                 </div>               
             </div>
             <div className="detail-btn">
-                <div className="recommend-item">热门推荐</div>     
-                <div className="number">123234566</div>        
-            </div>           
+                <div className="recommend-box">
+                   <div className="recommend-item">热门推荐</div>
+                    <div className="recommend-list">
+                        <div className="list-box">
+                            <div className="list-title">姜子牙为什么要娶68岁的黄花大闺女马氏为妻？原因很无奈</div>
+                            <div className="img-box">
+                                <img className="img-14" src="http://p3.pstatp.com/list/pgc-image/7d2e7c5e7620487fbe65723f76912dd7"/>
+                                <img className="img-15" src="http://p3.pstatp.com/list/pgc-image/fd5ae1313c16461c92d6864ccebaf360"/>
+                                <img className="img-16" src="http://p1.pstatp.com/list/pgc-image/1fa350e8eedf44baa027aa1b05e8328b"/>
+                            </div>
+                            <div className="list-info">
+                                <span className="app">打开APP</span>
+                                <span>历史回忆室</span>
+                                <span>40条评论</span>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <div className="list-title">张作霖当年乞讨时，孙寡妇给了他一碗饭吃，他是如何报答的</div>
+                            <div className="img-box">
+                                <img className="img-14" src="http://p3.pstatp.com/list/pgc-image/968a7179418e49cfa4872e47d59fdab0"/>
+                                <img className="img-15" src="http://p3.pstatp.com/list/pgc-image/db5adc7261034a20806a22684f0c7ebd"/>
+                                <img className="img-16" src="http://p3.pstatp.com/list/pgc-image/6d6560146e774543bab34b594b8ad0ee"/>
+                            </div>
+                            <div className="list-info">
+                                <span className="app">打开APP</span>
+                                <span>张生全精彩历史</span>
+                                <span>177条评论</span>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <div className="list-title">清朝一穷小子，因闹肚子下船方便，没想到因此成了百万富翁</div>
+                            <div className="img-box">
+                                <img className="img-14" src="http://p1.pstatp.com/list/pgc-image/a3d9a6ea311349169cf47fc6c033ead2"/>
+                                <img className="img-15" src="http://p3.pstatp.com/list/pgc-image/d27b17b112e04b4fbbbb2d6a90a7775a"/>
+                                <img className="img-16" src="http://p9.pstatp.com/list/pgc-image/9dbfff7198f74f4da6ab8b4b301efd24"/>
+                            </div>
+                            <div className="list-info">
+                                <span className="app">打开APP</span>
+                                <span>潋滟公子</span>
+                                <span>10条评论</span>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p1.pstatp.com/list/pgc-image/cbd869c544a2497ba45cbb7cc61dfe8b"/>
+                            <div className="list-right">
+                                <div className="right-title">古人写信不爱打标点，这个财主娶媳妇吃了大亏</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>賨人客</span>
+                                    <span>5条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <div className="list-title">㸚叕㠭㗊，你认识吗？章太炎：不认得这几个字，就免谈亲事</div>
+                            <div className="img-box">
+                                <img className="img-14" src="http://p1.pstatp.com/list/pgc-image/625eb27c31504cf4bf6dd8577fc69a3e"/>
+                                <img className="img-15" src="http://p3.pstatp.com/list/pgc-image/e4246becec0044dd9043cdca897cd79c"/>
+                                <img className="img-16" src="http://p1.pstatp.com/list/pgc-image/9664057000224fdea6c373b67b62692f"/>
+                            </div>
+                            <div className="list-info">
+                                <span className="app">打开APP</span>
+                                <span>阳光透过指缝的耀眼</span>
+                                <span>37条评论</span>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+                <div className="recommend-box">
+                   <div className="recommend-item">猜你喜欢</div>
+                    <div className="recommend-list">
+                        <div className="list-box">
+                            <img className="img-17" src="http://p3.pstatp.com/list/tos-cn-i-0000/d146aaa2a49711e988e3ac1f6b0b2bc2"/>
+                            <div className="list-right">
+                                <div className="right-title">灾难接连来袭，美首都已经被“包围”，70万人遇险，白宫也难幸免</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>迷彩新讯</span>
+                                    <span>4365条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p3.pstatp.com/list/tos-cn-i-0000/7390a95eb5a811e9ba5e7cd30a55e9ba"/>
+                            <div className="list-right">
+                                <div className="right-title">嘴上说自己爱国，却加入外国国籍，如今仍活跃在大陆捞金</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>娱乐点点点点点</span>
+                                    <span>5327条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p1.pstatp.com/list/tos-cn-i-0000/a557764ab04211e98f0cac1f6b0ec8fa"/>
+                            <div className="list-right">
+                                <div className="right-title">爱国爱港，数百香港中学生和驻港官兵在军舰上快闪《歌唱祖国》</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>对景当歌</span>
+                                    <span>3145条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p3.pstatp.com/list/tos-cn-i-0000/5fe28d48ad3111e9b55a7cd30a545d72"/>
+                            <div className="list-right">
+                                <div className="right-title">华春莹有了新工作！外交官一个人就是一支军队</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>大国方阵</span>
+                                    <span>450条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <div className="list-title">贼王张子强的灭亡之路：想引渡回香港，结果在大陆被枪决</div>
+                            <div className="img-box">
+                                <img className="img-14" src="http://p1.pstatp.com/list/pgc-image/1bb6b97bd0d24474be6336329f8e5318"/>
+                                <img className="img-15" src="http://p3.pstatp.com/list/pgc-image/e1dda066189f4b2792bc1200a217db04"/>
+                                <img className="img-16" src="http://p1.pstatp.com/list/pgc-image/39ec11bbbfaa4179a5da8cb2bba92c87"/>
+                            </div>
+                            <div className="list-info">
+                                <span className="app">打开APP</span>
+                                <span>第一秘史</span>
+                                <span>14条评论</span>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p1.pstatp.com/list/tos-cn-i-0004/ce223b850c1143cda6429ee726bfe3a6"/>
+                            <div className="list-right">
+                                <div className="right-title">为什么去香港玩，一眼就被认出是大陆人，香港人：全凭这三点</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>叶羽看世界</span>
+                                    <span>1条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p9.pstatp.com/list/tos-cn-i-0000/c5f871c6c07611e9a6f0ac1f6b0ec8fa"/>
+                            <div className="list-right">
+                                <div className="right-title">240秒为你揭秘“祸港四人帮”的真实面目</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>青蜂侠</span>
+                                    <span>729条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p3.pstatp.com/list/pgc-image/9514a49d50a945d288f63a3fa42f0f97"/>
+                            <div className="list-right">
+                                <div className="right-title">香港示威者内部欺凌曝光，女生哭诉后悔收钱参与</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>大竹县人民检察院</span>
+                                    <span>2条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <img className="img-17" src="http://p9.pstatp.com/list/tos-cn-i-0000/5d159d98995f11e98a007cd30a55d46c"/>
+                            <div className="list-right">
+                                <div className="right-title">新党青年声援黄智贤！戳破蔡英文「绿色法西斯」真面目！</div>
+                                <div className="list-info">
+                                    <span className="app">打开APP</span>
+                                    <span>王炳忠台湾</span>
+                                    <span>10477条评论</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="list-box">
+                            <div className="list-title">香港局势背后，是你不了解的中国</div>
+                            <div className="img-box">
+                                <img className="img-14" src="http://p3.pstatp.com/list/pgc-image/RaLDN8B8Q3oWIG"/>
+                                <img className="img-15" src="http://p1.pstatp.com/list/pgc-image/RaLDN8PFn3Bmkg"/>
+                                <img className="img-16" src="http://p3.pstatp.com/list/pgc-image/RYZSPVeHzGEje5"/>
+                            </div>
+                            <div className="list-info">
+                                <span className="app">打开APP</span>
+                                <span>株洲网</span>
+                                <span>1条评论</span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>   
+                <div className="btn-search">
+                    <div className="recommend-item">搜索</div>
+                    <div className="line">
+                        <div>三个代表重要思想</div>
+                        <span>|</span>
+                        <div>中央行政机构构架图</div>
+                    </div>
+                    <div className="line">
+                        <div>两个代表重要思想</div>
+                        <span>|</span>
+                        <div>机构改革方案内容</div>
+                    </div>
+                    <div className="line">
+                        <div>十八届一中全会时间</div>
+                        <span>|</span>
+                        <div>我国基本政治制度</div>
+                    </div>
+                    <div className="line">
+                        <div>十九大报告学习要点</div>
+                        <span>|</span>
+                        <div>中国时事政治新闻</div>
+                    </div>
+                    <div className="line">
+                        <div>机构改革改什么</div>
+                        <span>|</span>
+                        <div>党的组织原则是什么</div>
+                    </div>
+                </div>            
+            </div>          
         </div>
       )
     
