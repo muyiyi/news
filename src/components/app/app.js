@@ -29,6 +29,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
+        <div className="open">
+          <div className="page">
+            <div className="banner"></div>
+            <div className="text">已加载好您感兴趣的头条</div>
+            <div className="btn">立即打开</div>
+            <div className="close"></div>
+          </div>
+        </div>
         <NewsHeader></NewsHeader>
         <NewsNavigation></NewsNavigation>
         <NewsList></NewsList>

@@ -20,18 +20,19 @@ class NewsHeader extends React.Component {
     this.state = {}
   }
 
+
   /**
    * @desc 不用解释了吧，render函数
    */
   render() {
     return (
       <div className="news-header">
+        <div className="icon-0"></div>
         <span className="title"></span>
         <span className="icon-1"></span>
         <Link to={ {pathname: "/search/"} }>
           <span className="icon-2"></span>
         </Link>
-        
       </div>
       
     )

@@ -22,7 +22,33 @@ class NewsListch extends React.Component {
 
     render() {
         let item = this.props.data;
-        if (item.type === 5) {
+        if (item.type === 7) {
+            return (
+            <div className="list-box">
+                <img className="img-17" alt="" src={ item.imgsrc }/>
+                <div className="list-right ">
+                    <div className="right-title">{ item.title }</div>
+                    <div className="list-info">
+                        <span className="app">{ item.status }</span><span>{ item.scrsite }</span><span>{ item.comment }</span>
+                    </div>
+                </div>
+            </div>
+            )
+        } else if (item.type === 6) {
+            return (
+            <div className="list-box">
+                <div className="list-title ">{ item.title }</div>
+                <div className="img-box ">
+                    <img className="img-14" alt="" src={ item.imgsrc[0] }/>
+                    <img className="img-15" alt="" src={ item.imgsrc[1] }/>
+                    <img className="img-16" alt="" src={ item.imgsrc[2] }/>
+                </div>
+                <div className="list-info">
+                    <span className="app">{ item.status }</span><span>{ item.scrsite }</span><span>{ item.comment }</span>
+                </div>
+            </div>
+            )
+        } else if (item.type === 5) {
             return (
             <div className="content">
                 <div className="title-1">{ item.title }</div>
