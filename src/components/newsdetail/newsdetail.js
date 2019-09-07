@@ -174,7 +174,7 @@ class NewsDetail extends React.Component {
                 <div className="top-title">
                     <div className="img-9"></div>
                     <span>今日头条</span>
-                    <div className="open">打开</div>
+                    <div className="opena">打开</div>
                 </div>
                 <div className="article-box">
                    <div className="top-article">

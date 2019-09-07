@@ -9,7 +9,7 @@ import './app.less'
 import  NewsHeader from '../news-header/news-header'
 import NewsNavigation from '../news-navigation/news-navigation';
 import NewsList from '../news-list/news-list';
-
+import classnames from 'classnames';
 
 
 class App extends React.Component {
@@ -20,8 +20,19 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      dialogstate: false
+    }
   }
+
+
+  dialogshow = () => {
+    this.setState({
+      dialogstate: !this.state.dialogstate
+    })
+  }
+  
+  
 
   /**
    * @desc 不用解释了吧，render函数
@@ -29,15 +40,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <div className="open">
+        <div className={ classnames('open', {'show': this.state.dialogstate}) }>
           <div className="page">
             <div className="banner"></div>
             <div className="text">已加载好您感兴趣的头条</div>
             <div className="btn">立即打开</div>
-            <div className="close"></div>
+            <div className="close" onClick={ this.dialogshow }></div>
           </div>
         </div>
-        <NewsHeader></NewsHeader>
+        <NewsHeader click={ this.dialogshow }></NewsHeader>
         <NewsNavigation></NewsNavigation>
         <NewsList></NewsList>
       </div>

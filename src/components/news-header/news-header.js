@@ -21,13 +21,19 @@ class NewsHeader extends React.Component {
   }
 
 
+  handle = () => {
+    this.props.click()
+  }
+ 
+
   /**
    * @desc 不用解释了吧，render函数
    */
   render() {
+  
     return (
       <div className="news-header">
-        <div className="icon-0"></div>
+        <div className="icon-0" onClick={ this.handle.bind(this) }></div>
         <span className="title"></span>
         <span className="icon-1"></span>
         <Link to={ {pathname: "/search/"} }>
@@ -36,7 +42,7 @@ class NewsHeader extends React.Component {
       </div>
       
     )
-  }
+  } 
 }
 
 export default NewsHeader;
